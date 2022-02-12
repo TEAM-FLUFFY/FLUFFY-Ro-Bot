@@ -397,7 +397,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝖥𝗂𝗅𝗍𝖾𝗋', callback_data='hud'),
             InlineKeyboardButton('𝖯𝖺𝗌𝗍𝖾', callback_data='paste'),
             InlineKeyboardButton('𝖦-𝖳𝗋𝖺𝗇𝗌', callback_data='gtrans'),
-            InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖣', callback_data='stick')
+            InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖣', callback_data='stick'),
+            ],[
+            InlineKeyboardButton('Song', callback_data='song'),
+            InlineKeyboardButton('Covid', callback_data'covid'),
             ],[
             InlineKeyboardButton('Close', callback_data='close_data'),          
             InlineKeyboardButton('Stats', callback_data='stats'),
