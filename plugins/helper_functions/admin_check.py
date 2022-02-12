@@ -21,7 +21,7 @@ async def admin_check(message: Message) -> bool:
     check_status = await client.get_chat_member(
         chat_id=chat_id,
         user_id=user_id
-    ),
+    )
     admin_strings = [
         "creator",
         "administrator"
