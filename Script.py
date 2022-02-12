@@ -10,10 +10,8 @@ class script(object):
 /about - 𝖺𝖻𝗈𝗎𝗍 𝗆𝖾
 
     ABOUT_TXT = "
-○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/TEAM_KERALA'>ᖴᑌᑕK Oᖴᖴ🇨🇷[𝗢𝗙𝗙𝗟𝗜𝗡𝗘]</a>
+🔥 Dev: <a href='https://t.me/TEAM_KERALA'>ᖴᑌᑕK Oᖴᖴ🇨🇷[𝗢𝗙𝗙𝗟𝗜𝗡𝗘]</a>
 "
-    SOURCE_TXT = """<b>NOTE:</b>
-- Fluffy is a closed source project.   
 
 <b>DEVS:</b>
 - <a href='https://t.me/TEAM_KERALA'>ᖴᑌᑕK Oᖴᖴ🇨🇷[𝗢𝗙𝗙𝗟𝗜𝗡𝗘]</a>
