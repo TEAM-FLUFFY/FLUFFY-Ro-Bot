@@ -348,7 +348,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     file_id=file_id,
                     caption=f_caption
                     )
-                await query.answer('𝙷𝙴𝚈 {query.from_user.first_name} 𝙲𝙷𝙴𝙲𝙺 𝙿𝙼, 𝙸 𝙷𝙰𝚅𝙴 𝚂𝙴𝙽𝚃 𝙵𝙸𝙻𝙴𝚂 𝙸𝙽 𝚈𝙾𝚄𝚁 𝙿𝙼...❤️',show_alert = True)
+                await query.answer('𝙷𝙴𝚈 𝙲𝙷𝙴𝙲𝙺 𝙿𝙼, 𝙸 𝙷𝙰𝚅𝙴 𝚂𝙴𝙽𝚃 𝙵𝙸𝙻𝙴𝚂 𝙸𝙽 𝚈𝙾𝚄𝚁 𝙿𝙼...❤️',show_alert = True)
         except UserIsBlocked:
             await query.answer('𝖴𝗇𝖻𝗅𝗈𝖼𝗄 𝗍𝗁𝖾 𝖻𝗈𝗍 𝗆𝖺𝗇!',show_alert = True)
         except PeerIdInvalid:
@@ -384,7 +384,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('🎗️𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗔 𝗚𝗥𝗢𝗨𝗣🎗️ :)', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('🎗️𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗔 𝗚𝗥𝗢𝗨𝗣🎗️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -394,13 +394,29 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('𝖥𝗂𝗅𝗍𝖾𝗋', callback_data='hud'),
+                      InlineKeyboardButton('𝖥𝗂𝗅𝗍𝖾𝗋', callback_data='hud'),
+            InlineKeyboardButton('🇮🇳𝖨𝗆𝖽𝖻', callback_data='imbd'),
+            InlineKeyboardButton('𝖯𝗎𝗋𝗀𝖾', callback_data='purge')
+            ],[
+            InlineKeyboardButton('𝖳𝗀𝗋𝖺𝗉𝗁', callback_data='tgraph'),
+            InlineKeyboardButton('𝖬𝖾𝗆𝖾', callback_data='fun'),
+            InlineKeyboardButton('𝖬𝗎𝗍𝖾', callback_data='mute')
+            ],[
+            InlineKeyboardButton('𝖡𝖺𝗇', callback_data='ban'),
+            InlineKeyboardButton('𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇', callback_data='coct'),
+            InlineKeyboardButton('𝖯𝗂𝗇', callback_data='pin')
+            ],[
+            InlineKeyboardButton('𝖨𝗇𝖿𝗈', callback_data='info'),
+            InlineKeyboardButton('𝖩𝗌𝗈𝗇', callback_data='json'),
+            InlineKeyboardButton('𝖯𝗂𝗇𝗀', callback_data='ping')
+            ],[
+            InlineKeyboardButton('𝖢𝗈𝗏𝗂𝖽', callback_data='covid'),
+            InlineKeyboardButton('𝖲𝗈𝗇𝗀', callback_data='song'),
+            InlineKeyboardButton('𝖳𝖳𝖲', callback_data='tts'),
+            ],[          
             InlineKeyboardButton('𝖯𝖺𝗌𝗍𝖾', callback_data='paste'),
             InlineKeyboardButton('𝖦-𝖳𝗋𝖺𝗇𝗌', callback_data='gtrans'),
-            InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖣', callback_data='stick'),
-            ],[
-            InlineKeyboardButton('Song', callback_data='song'),
-            InlineKeyboardButton('Covid', callback_data'covid'),
+            InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖣', callback_data='stick')
             ],[
             InlineKeyboardButton('Close', callback_data='close_data'),          
             InlineKeyboardButton('Stats', callback_data='stats'),
